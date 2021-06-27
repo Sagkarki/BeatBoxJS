@@ -6,7 +6,8 @@
 class Beat {
     constructor(audioSrc) {
         this.audio = new Audio(audioSrc);
-        console.log(this.audio)
+        console.log(this.audio);
+       
     }
  play = () => {
      this.audio.currentTime= 0;
