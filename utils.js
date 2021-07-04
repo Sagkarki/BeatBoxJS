@@ -48,5 +48,8 @@ class Button {
      * Deselect function to reset background color and boxShadow
      */
     deselect = () => {
+        this.element.style.backgroundColor="transparent";
+        this.element.style.boxShadow="none";
     }
+
 }
