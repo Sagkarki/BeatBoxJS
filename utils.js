@@ -27,6 +27,12 @@ class Button {
         this.keyCode = keyCode;
         this.element = document.getElementById(keyCode);
         this.setButtonColorInHTML();
+        this.setATransitionEndListener();
+    }
+    setATransitionEndListener = () => {
+        this.element.addEventListener('transitioned', () => {
+            this.deselect();
+        })
     }
 
     /**
